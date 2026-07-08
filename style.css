@@ -1,0 +1,343 @@
+
+/*===== RESET BASE*/
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+body{
+    font-family:'Lato', sans-serif;
+    color: #333333;
+    background-color: #fff;
+}
+
+h1,h2,h3,h4{
+    font-family:'Playfair Display',serif;
+}
+
+/*===== HEADER ====*/
+header{
+    background-color: #1a1a1a;
+    padding: 20px 40px;
+    position: static;
+    top: 0;
+    z-index: 100;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-links{
+    display: flex;
+    gap: 30px;
+}
+
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav a:hover{
+    color: #e63946;
+}
+
+/*====== HERO =====*/
+#hero{
+    text-align: center;
+    padding: 60px  20px;
+    background-color: #f8f0e3;
+
+}
+
+#hero img{
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+#hero h1{
+    font-size: 48px;
+    margin-top:30px ;
+    color: #1a1a1a;
+}
+
+#hero p{
+    font-size: 20px;
+    color: #666;
+    margin-top: 10px;
+}
+
+#hero a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 32px;
+    background-color: #e63946;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+#hero a:hover{
+    background-color: #c1121f;
+}
+
+/*===== MENU ====*/
+#menu{
+    padding: 60px 40px;
+    background: #ffffff;
+
+}
+
+
+/*====== DRINKS LIST ======*/
+#menu ul{
+     list-style: none;
+     padding: 0;
+}
+
+#menu ul li{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    color: #555;
+}
+
+
+#menu h2{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1a1a1a;
+}
+
+#menu h3{
+    font-size: 24px;
+    color: #e63946;
+    margin: 30px 0 15px 0;
+    border-bottom: 2px solid #e63946;
+    padding-bottom: 8px;
+
+}
+
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+
+}
+
+.menu-item h4{
+    font-size: 18px;
+    color:#1a1a1a;
+}
+
+.menu-item p{
+    font-size: 14px;
+    color: #888;
+    margin-top: 4px;
+}
+
+.menu-item span{
+    font-size: 18px;
+    font-weight: bold;
+    color: #e63946;
+}
+
+
+/*===== ABOUT =====*/
+#about{
+    background-color: #f8f0e3;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+#about h2{
+    font-size: 36px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+#about p{
+    font-size: 18px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+
+
+
+/*===== CONTACT =====*/
+#contact{
+    padding: 60px 40px;
+    background-color: #ffffff;
+}
+
+#contact h2{
+    font-size: 36px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+
+/*===== TABLE =====*/
+table{
+    width: 100%;
+    max-width: 500px;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th{
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 12px 16px;
+    text-align: left;
+    font-family: 'lato', sans-serif;
+}
+
+td{
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+
+tr{
+    background-color: #f8f0e3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+/*====== FOOTER ======*/
+footer{
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+}
+
+
+/*======= MOBILE RESPONSIVE ======*/
+@media(max-width:768px){
+    /* Header*/
+    heade{
+        padding: 12px 16px;
+    }
+
+    .logo{
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    .nav-links{
+        gap: 10px;
+    }
+
+    nav a{
+        font-size: 11px;
+        letter-spacing: 0;
+    }
+
+    /*==hero ==*/
+    #hero{
+        padding: 40px 16px;
+    }
+
+    #hero h1{
+        font-size: 32px;
+    }
+
+    #hero p{
+        font-size: 16px;
+    }
+
+    #hero img{
+        height: 250px;
+    }
+
+    /*=== Menu ==*/
+    #menu{
+        padding: 40px 16px;
+    }
+
+    .menu-item{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .menu-item span{
+        font-size: 16px;
+    }
+
+    /*=== About ===*/
+    #about{
+        padding: 40px 16px;
+    }
+
+    #about h2{
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+    #about p{
+        font-size: 16px;
+    }
+
+
+    /*== Contact ==*/
+    #contact{
+        padding: 40px 16px;
+    }
+
+    /*== Table ==*/
+    table {
+        font-size: 14px;
+    }
+
+    th,td{
+        padding: 8px 10px;
+    }
+
+    /*== Footer ==*/
+    footer{
+        padding: 20px 16px;
+        font-size: 13px;
+    }
+}
